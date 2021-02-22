@@ -32,4 +32,17 @@ public class ProdutoController {
     public Produto salvarProduto(@RequestBody Produto produto){
         return produtoRepository.save(produto);
     }
+
+    //Método pra deletar produto
+    @DeleteMapping("/produto/")
+    public String deletarProduto(@RequestBody Produto produto){
+        produtoRepository.delete(produto);
+        return "Produto deletado com sucesso";
+    }
+
+    //Método para atualizar um produto
+    @PutMapping("/produto")
+    public void atualizarProduto(){
+
+    }
 }
