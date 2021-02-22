@@ -12,6 +12,12 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.util.ArrayList;
+//================ Swagger ====================//
+//O Swagger funciona como o Postman
+// só que ele mostra uma Api online navegable onde você
+//Pode testar os métodos da Api
+//================ Swagger ====================//
+
 
 @Configuration //Esta anotação da a entender ao Spring que esta classe é uma configuração
 @EnableSwagger2
