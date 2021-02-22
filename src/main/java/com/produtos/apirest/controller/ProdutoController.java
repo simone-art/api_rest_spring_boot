@@ -41,8 +41,11 @@ public class ProdutoController {
     }
 
     //Método para atualizar um produto
+    //@RequestBody permite receber o produto através do JSON
     @PutMapping("/produto")
-    public void atualizarProduto(){
+    public String atualizarProduto(@RequestBody Produto produto){
+        produtoRepository.save(produto);
+        return "Produto atualizado com sucesso";
 
     }
 }
