@@ -52,6 +52,10 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -69,6 +73,11 @@
 					<target>11</target>    <!-- same as <java.version> -->
 				</configuration>
 			</plugin>
+			<plugin>
+			<groupId>com.heroku.sdk</groupId>
+			<artifactId>heroku-maven-plugin</artifactId>
+			<version>3.0.3</version>
+		</plugin>
 		</plugins>
 	</build>
 
